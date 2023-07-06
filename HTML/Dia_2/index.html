@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+    <html lang="es">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <!-- Para cambiar el icono de la pestaña del navegador -->
+            <link rel="icon" href="./assets/icon/icono_hamburguesa.ico" type="image/x-icon">
+            <title>Ejercicios HTML</title>
+            <!-- Para invocar el archivo de CSS (estilos) -->
+            <link rel="stylesheet" href="assets/css/style.css">
+            <!--  
+                Para poner estilos dentro del html
+                <style>
+                    #header{
+                        background-color: tomato;
+                    }
+                </style>
+            -->
+        </head>
+        <body> 
+
+            
+
+            <!-- Header -->
+            <header id="header">
+                <h1>
+                    <a href="index.html">
+                        <img src="assets/images/logo_hamburguesa.jpg" height="50" alt="Logo Empresa">
+                    </a>
+                </h1>
+                <!-- Barra de navegacion -->
+                <nav id="navegacion_principal" class="hola">
+                    <ul>
+                        <li><a href="index.html" class="nav-link">Inicio</a></li>
+                        <li><a href="productos.html" class="nav-link">Productos</a></li>
+                        <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                        <li><a href="login.htmlo" target="_blank" class="nav-link">Login</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <!-- Contenido -->
+            <main>
+
+                <article>
+
+                    <section>
+                        <img src="assets/images/pan_hamburguesa.jpg" height="300" alt="Pan Hamburguesa">
+                    </section>
+
+                    <section>
+                        <h3>El pan de la hamburguesa</h3>
+                        <p>El pan para hamburguesa tiene clásicamente forma redonda y se elabora en unidades individuales.<span class="bold">En esencia</span>, es una variedad del pan de molde y comparte con él su textura y su sabor. Su consistencia blanda lo hace especialmente apropiado para personas con problemas de masticación</p>
+                    </section>
+
+                </article>
+
+            </main>
+
+            <aside>
+                <!-- Las etiquetas pueden tener dos tipos de atributos, id (Unicos) y class (Para dar estilo en css) -->
+                <nav id="navegacion_secundaria" aria-label="navbar">
+                    <ul>
+                        <li><a href="#">Receta de hamburguesa casera</a></li>
+                        <li><a href="#">Como elegir una buena carne</a></li>
+                        <li><a href="#">Los mejores acompañamientos para un buen pan</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Para hacer referencia a un id se hace con # -->
+                <!-- Para hacer referencia a las clases se hace con un . (punto) -->
+                <!-- PAra crear una etiqueta con id y class -> nav#navegacion_secundaria2.hola2 -->
+                <nav id="navegacion_secundaria2" class="hola2"></nav>
+                
+                <section>
+
+                    <form action="#">
+
+                        <h4>Inscribete a nuestro newsletter</h4>
+                        <label for="email">Correo electronico</label>
+                        <input type="email" name="newsletter" id="email" placeholder="hola@ejemplo.com">
+                        <button type="submit">Inscribeme</button>
+
+                    </form>
+        
+                </section>
+
+                
+            </aside>
+            <!-- Footer -->
+            <footer>
+                <p><center>&copy;  Todos los derechos reservados</center></p>
+            </footer>
+        </body>
+   </html>

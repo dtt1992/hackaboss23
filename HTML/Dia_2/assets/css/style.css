@@ -1,0 +1,52 @@
+/* CSS: Cascading Style Sheets */
+/* 1.Nivel de especifico */
+       /* Mas especifico a menos: */
+              /* 1. Estilo inline (Directamente en el archivo html) */
+              /* 2. Seleccion por id*/
+              /* 3. Seleccion por clase*/
+              /* 4. Seleccion por etiqueta*/
+/* 2.Lugar en la cascada */
+
+/* Seleccion de un elemento para modificar, id y clases */
+/* Entre llaves agregaremos las propiedades que modificaran el elemento seleccionado */
+/* Se agregan las propiedades y sus correspondientes valoresa */
+
+/* Seleccion id */
+#header{
+        background-color: tomato;
+}
+
+/* Seleccion clase */
+.nav-link{
+       color: white;
+       text-decoration: none;
+}
+
+/* Seleccionar una etiqueta directamente */
+
+/* Seleccion etiqueta */
+body{
+       margin: 0;
+}
+
+article{
+       color: gray;
+} 
+
+a{
+       color: blueviolet;
+       font-weight: bolder;
+}
+
+.bold{
+       font-weight: bold;
+       color: red;
+}
+
+
+/* un id por encima de una etiqueta */
+#navegacion_principal ul{
+       width: 90px;
+       text-align: left;
+       margin: 0 auto;
+}

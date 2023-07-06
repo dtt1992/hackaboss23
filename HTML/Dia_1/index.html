@@ -1,0 +1,198 @@
+<!-- Que tipo de archivo vamos a definir -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+        <!--HEAD: Informacion para el navegador--> 
+        <!-- Title: Titulo de la pestaña del navegador -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia 1 HTML</title>
+</head>
+<body>
+    
+        <!-- BODY:  La informacion que vera el usuario -->
+        <!-- h1: Se utiliza para poner el titulo, 
+            el texto mas importante
+        Tenemos desde el h1 mas importante hasta el h6 menos importante-->
+        <h1>Este es el titulo</h1>
+        <h2>Este es menos importante</h2>
+        <h6>Es el menos importante</h6>
+        <!-- Para escribir un parrafo se pone la etiqueta p -->
+        <!-- Para escribir en negrita se pone la etiqueta b -->
+        <!-- Para escribir en negrita se pone la etiqueta strong (mucho mejor) -->
+        <!-- Para escribir en cursiva se pone la etiqueta i -->
+        <!-- Para escribir en cursiva se pone la etiqueta em (mucho mejor) -->
+        <!-- Se puede poner una imgen dentro de un parrafo -->
+        <!-- Para usar una caja dentro de un parrafo se utiliza span -->
+        <p>Hola esto es un parrafo.</p>
+        <p><b> Lorem ipsum 
+            <img
+            width="50"
+            src="https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/N5EPKUWMIVH4RCPNDM7OP5OKQQ.jpeg" 
+            alt="Hamburguesa deliciosa"> dolor sit amet,</b> 
+            <strong> consectetur adipisicing elit.</strong> Eveniet soluta illo harum inventore vel 
+            <i> fuga cumque fugit,</i> 
+            alias minus corporis sed ipsum veritatis reprehenderit, 
+            ipsa voluptates amet consequuntur 💖 beatae? Ea?</p>    
+            
+        <!-- IMG: Insertar una imagen
+            atributos:
+                    alt-> si la imagen no se muestra, muestra un nombre
+                    height -> altura de la imagen (Pero solo se pone uno altura o anchura)
+                    width -> anchura (Pero solo se pone uno altura o anchura)
+                -->
+        <img
+        height="200"
+        width="500"
+        src="https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/N5EPKUWMIVH4RCPNDM7OP5OKQQ.jpeg" 
+        alt="Hamburguesa deliciosa">
+
+        <!-- Para crear una caja se utiliza la etiqueta div -->
+
+        <div style="width: 200px; background-color: blue;">
+            <img
+            width="100%"
+            src="https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/N5EPKUWMIVH4RCPNDM7OP5OKQQ.jpeg" 
+            alt="Hamburguesa deliciosa">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium autem repudiandae ea aliquam. Vel libero temporibus beatae voluptatum quia deleniti enim repellendus pariatur dolorum, expedita ea fugiat? Odit, provident autem!</p>
+            <img
+            width="100%"
+            src="https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/N5EPKUWMIVH4RCPNDM7OP5OKQQ.jpeg" 
+            alt="Hamburguesa deliciosa">
+        </div>
+        <!-- Para crear link se utiliza la etiqueta a -->
+        <p>Lorem ipsum dolor sit <a href="https://www.google.es"> amet consectetur adipisicing elit. Eos, ex iste fugit dignissimos at ab est? Non tempore</a> sed asperiores excepturi placeat qui distinctio mollitia ullam a. Error, architecto magni.</p>
+        <!-- Para crear el contenido principal -->
+        <a href="contacto.html">Ir a contacto</a>
+        <main>
+            
+        </main>
+            
+        <!-- Para crear el contenido en la barra lateral -->
+        <aside>
+
+        </aside>
+
+        <!-- Para hacer una lista desordenada (Con puntos) se crea con la etiqueta ul -->
+        <!-- Para introducir itemsz dentro de una lista se usa la etiqueta li -->
+        <ul>
+            <li>Comprar pan</li>
+            <li>Comprar harina</li>
+            <li>Comprar vegetales</li>
+            <li>Comprar aceite</li>
+        </ul>
+
+        <!-- Para hacer una lista ordenada (Con numeros) se crea con la etiqueta ul -->
+        <!-- Para introducir items dentro de una lista se usa la etiqueta li -->
+        <ol>
+            <li>Comprar pan</li>
+            <li>Comprar harina</li>
+            <li>Comprar vegetales</li>
+            <li>Comprar aceite</li>
+        </ol>
+
+        <!-- Para crear una tabla se utiliza table -->
+        <!-- TR se definia la fila de la tabla y para hacerlo correcto se usa thead-->
+        <!-- Th el encabezado de la tabla -->
+        <!-- Td es el valor de cala columna -->
+        <!-- Colspan es para unir los encabezados, para unir celdas -->
+
+        <table border="1">
+            <thead> 
+                
+                <th>
+                    Columna 1
+                </th>
+                <th>
+                    Columna 2
+                </th>
+                <th colspan="3">
+                    Columna 3
+                </th>
+            </thead>                
+            <tbody>
+
+                <tr>
+                    <td>valor 1</td>
+                    <td>valor 2</td>
+                    <td>valor 3</td>
+                    <td>valor 4</td>
+                    <td>valor 5</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <br>
+        <br>
+        <!-- Para crear formularios se hace con la etiqueta form -->
+        <form action="#">
+
+            <div>
+                <!-- Para poner un texto relacionado con el inpug -->
+                <label for="searchBox">Buscar</label>
+                
+                <!-- Para pedir informacion al usuario se utiliza el input -->
+                <!-- Para relacionar el label con el input se pone id dentro del input  
+                    Atributor: 
+                                Autofocus -> Para saber donde se empieza el formulario
+                                Disable -> Desactivar el campo
+                                Readonly -> Para solo lectura
+                                Required -> Para que sea obligatorio
+                                placeholder -> Para que salga un texto en el campo y se borre al entrar en el input
+                -->
+                <input type="text" name="search" id="searchBox" autofocus>
+            </div>
+
+            <div>
+                <label for="age"> Escribe tu edad</label>
+                <input type="number" name="edad" id="age">
+            </div>
+
+            <div>
+                <label for="yes">Si</label>
+                <input type="radio" name="input_radio" id="yes">
+            </div>
+
+            <div>
+                <label for="no">No</label>
+                <input type="radio" name="input_radio" id="no">
+            </div>
+
+            <div>
+                <label for="agua">Agua</label>
+                <input type="checkbox" name="checkbox" id="agua">
+
+                <label for="aceite">Aceite</label>
+                <input type="checkbox" name="checkbox" id="aceite">
+
+                <label for="sal">Sal</label>
+                <input type="checkbox" name="checkbox" id="sal">
+            </div>
+
+            <div>
+                <label for="password">Contraseña</label>
+                <input type="password" name="password" id="password">
+            </div>
+
+            <div>
+                <label for="comentario">Comentario</label>
+                <textarea name="comentario" id="comentario"></textarea>
+            </div>
+
+            <div>
+                <label for="para_tomar">Que queires beber?</label>
+                <select name="tomar" id="para_tomar">
+                    <option value="agua">Agua</option>
+                    <option value="refresco">Refresco</option>
+                    <option value="vino">Vino</option>
+                </select>
+            </div>
+                <!-- Para crear un boton se hace con la etiqueta button -->
+                <!-- El boton submit es para enviar el formulario -->
+            <button type="submit">Enviar</button>
+        </form>
+
+</body>
+</html>

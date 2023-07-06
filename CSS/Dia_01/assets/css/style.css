@@ -1,0 +1,111 @@
+/* CSS: Cascading Style Sheets */
+/* 1.Nivel de especifico */
+       /* Mas especifico a menos: */
+            /* 0. Uso del !important */
+            /* 1. Estilo inline (Directamente en el archivo html) */
+            /* 2. Seleccion por id*/
+            /* 3. Seleccion por clase o por atributo*/
+            /* 4. Seleccion por etiqueta*/
+            /* 5. Seleccion por * (selecciona todo) */
+/* 2.Lugar en la cascada */
+
+
+/* Selecciona todas las etiquetas dentro del body */
+/* *{
+    color:tomato;
+} */
+
+/* Colocando !important ignora cualquier regla en la especificida, intentar no usarlo nunca */
+/* a{
+    color: forestgreen !important; 
+} */
+
+/* Para seleccionar una referencia */
+[data-titulo-principal="true"]{
+    color: blue;
+}
+
+[data-titulo-principal="false"]{
+    color: cyan;
+}
+
+/* Para seleccionar una etiqueta muy especifica */
+a[href="https:wwww.google.es"]{
+    color: chartreuse;
+}
+
+/* Para especificar una etiqueta que empiece por se le pone un ^ */
+a[href^="http://127.0.0.1:5500"]{
+    color: cadetblue;
+}
+/* Para especificar una etiqueta que termine por se le pone un $ */
+
+
+ /* Para seleccionar el primer elemento del li */
+/* ul.elementos li:first-child{
+    background-color: tomato;
+    color: white;
+} */
+
+/* Para seleccionar el ultimo elemento del li y para no duplicar codigo, se pone todos en el mismo separados por una coma */
+ul.elementos li:last-child,
+ul.elementos li:first-child,
+ul.elementos li:nth-child(7){
+    background-color: tomato;
+    color: white;
+}
+
+/* Para seleccionar elementos pares de la lista y usamos rgba para usar colores alfa para las transparencias */
+ul.elementos li:nth-child(2n){
+    background-color: rgba(255, 99, 71, .25)
+}
+
+/* Para seleccionar la primera letra de cada uno de los elementos */
+ul.elementos li::first-letter{
+    font-size: 35px;
+    font-weight: 900;
+}
+
+/* Cuadno el usuario selecciona una parte del texto de un parrafo que tenga una caracteristia especifica */
+p::selection{
+    background-color: black;
+    color:yellow;
+}
+
+/* Seleccionar desde un elemento hasta el ultimo elemento */
+
+ul.elementos li:nth-child(n+6){
+    text-decoration: line-through;
+}
+
+/* Los px son unidades absolutas y si usamos el % son unidades relativas */
+.cuadrado{
+    background-color: tomato;
+    height: 300px;
+    width: 100%;
+}
+
+/* No usar mm, cm, pulgadas */
+
+/* Para usar la unidad relativas en texto se utiliza em y para utilizar el tamaño de la fuente del navegador se utiliza rem (1 rem = 16px) */
+.articulo1{
+    font-size: 1rem;
+}
+/* em multiplica el tamaño definido anteriormente, si no hay referencia, coge la refencia del body que es 16px */
+.articulo1 h1{
+    font-size: 3em; /* Hace el calculo de 3 * 16px = 48px */
+}
+
+.copete{
+    font-size: 1.25em ;
+}
+p{
+    font-size: 1em;
+}
+
+.cuadrado1{
+    background-color: aqua;
+    height: 1em;
+    width: 1rem;
+}
+
