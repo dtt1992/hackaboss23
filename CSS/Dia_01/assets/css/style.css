@@ -94,11 +94,26 @@ ul.elementos li:nth-child(n+6){
 /* em multiplica el tamaño definido anteriormente, si no hay referencia, coge la refencia del body que es 16px */
 .articulo1 h1{
     font-size: 3em; /* Hace el calculo de 3 * 16px = 48px */
+    font-weight: lighter;
+    text-transform: uppercase;
+    /* text-decoration: underline; */
+    text-shadow: 2px 2px 5px rgba(0,0,0,.5);
+    text-align: center;
+
 }
 
 .copete{
     font-size: 1.25em ;
+    text-align: justify;
+    /* width: 400px; */
+    /* Para separar las lineas del parrafo */
+    line-height: 2em;
+    /* Separar los espacios entre letras */
+    letter-spacing: -1px;
+    /* Separar los espacios entre palabras */
+    word-spacing: 2em;
 }
+
 p{
     font-size: 1em;
 }
@@ -107,5 +122,34 @@ p{
     background-color: aqua;
     height: 1em;
     width: 1rem;
+}
+
+body{
+    margin: 0;
+}
+
+/* Para definitar la altura del elemento y queres que utiliza la altura maxima del viewport se pone vh y para el ancho se pone vw */
+.viewport{
+    background-image: url(../images/astronauta.jpg);
+    background-position: center;
+    background-size: auto 100%;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container{
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* Para añador lineas debajo de cada elemento de la lista y para agregar tipografias se hace con font-family*/
+.producto{
+    border-bottom: 1px solid #ccc;
+    /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: 'Agdasima', sans-serif;
+}
+/* Quitar la linea del ultimo elemento */
+.producto:last-child{
+    border-bottom:none;
 }
 

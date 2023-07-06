@@ -4,12 +4,22 @@
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>Dia 1 CSS</title>
+            <link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@700&display=swap" rel="stylesheet">
             <link rel="stylesheet" href="./assets/css/style.css">
         </head>
         <body>
         <!-- DOM -> Document object model (como interpreta el navegador tu codigo) -->
+        <!-- Utiliza el ancho maximo disponible -->
+        <!-- Se organiza uno arriba del otro -->
+        <!-- La altura del elemento depende del contenido -->
         
             <article class="articulo1">
+                
+                <div class="container">
+                    <div class="viewport"></div>
+                </div>
+
+                <div class="viewport"></div>
                 <!-- Puedes crear atributos personalizados para recuperarlos en css -->
                 <h1 class="" data-autor="Dani Torres" data-titulo-principal="true">Hola Mundo</h1>
                 <div class="cuadrado1"></div>
@@ -36,6 +46,22 @@
                     <li>Elemento 10</li>
                     <li>Elemento 11</li>
                 </ul>
+
+                <!-- Crear una lista con una clase y cada linea de la lista tiene una clase con emmet 
+                ul.productos>li.producto*10{Producto $$} -->
+                <ul class="productos">
+                    <li class="producto">Producto 01</li>
+                    <li class="producto">Producto 02</li>
+                    <li class="producto">Producto 03</li>
+                    <li class="producto">Producto 04</li>
+                    <li class="producto">Producto 05</li>
+                    <li class="producto">Producto 06</li>
+                    <li class="producto">Producto 07</li>
+                    <li class="producto">Producto 08</li>
+                    <li class="producto">Producto 09</li>
+                    <li class="producto">Producto 10</li>
+                </ul>
+
             </article>
 
             <!-- los div ocupan el ancho maximo y la altura de su contenido -->
