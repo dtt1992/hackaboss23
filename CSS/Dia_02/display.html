@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+    <html lang="es">
+
+        <head>
+
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Display</title>
+
+            <style>
+                .links {
+                    text-align: center;
+                    padding: 0;
+                }
+                
+                .link{
+                    list-style: none;
+                    display: inline;
+                    height: 100px;
+                    /* float: left; */
+                    /* margin-right: 5px; */
+                    background-color: deeppink;
+                    padding: 1em;
+                }
+                
+                .link a{
+                    color: white;
+                }
+                .icon{
+                    font-size: 50px;
+                }
+
+                .link01{
+                    text-decoration: line-through;
+                }
+
+                .link03{
+                    display: inline-block;
+                }
+
+                .bosque{
+                    height: 2em;
+                }
+
+            </style>
+            
+
+        </head>
+
+        <body> 
+
+            <ul class="links"> 
+
+                <!-- Para crearlos automaticamente ul>li*5>a[href="#"]{link $$} -->
+                <li class="link link01"><a href="#">link 01 <span class="icon">💖</span></a></li>
+                <li class="link link02"><a href="#">link 02</a></li>
+                <li class="link link03"><a href="#">link 03</a></li>
+                <li class="link link04"><a href="#">link 04</a></li>
+                <li class="link link05"><a href="#">link 05 <img class="bosque" src="./assets/image/bosque.jpg"  alt=""></a></li>
+
+            </ul>
+
+        </body>
+
+    </html>

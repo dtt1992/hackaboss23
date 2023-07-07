@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+    <html lang="es">
+        <head>
+
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Position</title>
+
+            <style>
+
+                body{
+                    margin: 0;
+                }
+
+                .square{
+                    width: 500px;
+                    aspect-ratio: 1;
+                    
+                }
+
+                .position{
+                    /* height: 400px; */
+                    /* position: static; Posicion estatica dentro del flujo del html */
+                    position: relative; /*Posicion relativo al flujo del html*/
+                    background-color: crimson;
+                }
+
+                .top{
+                    background-color: rgba(255, 255, 0, .5);
+                    position: relative;
+                    bottom: 250px;
+                    left: 250px;
+                }
+
+                .container{
+                    position: relative;
+                    background-color: blue;
+                    height: 200px;
+                    
+                }
+
+                .absolute{
+                    background-color: rgba(255, 140, 0, .75);
+                    position: absolute; /*Posicion absoluta dentro del documento*/
+                    bottom:-100px;
+                    right: 0;
+                }
+
+                .fija{
+                    position: fixed;
+                    background-color: blueviolet;
+                    top: 0;
+                    width: 100%;
+                    height: 30px;
+                    z-index: 1; /*Niveles de visualizaciones en la web, va de 1 a -1*/
+                }
+
+
+
+            </style>
+
+        </head>
+
+        <div class="fija"></div>
+        <body>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto esse suscipit dolores. Pariatur excepturi, quos deleniti voluptatem nobis perferendis at vitae! Facere ipsam, temporibus obcaecati iste debitis facilis ipsum corporis!
+            Magni excepturi ex sequi cum reprehenderit laboriosam sint, fuga odio nemo at, ea sit eius repellat laudantium vero molestias, tempora veniam quis? Voluptatibus, praesentium cum nihil repellendus ea quia ullam.
+            Soluta error, sit sapiente neque repellendus eum maxime incidunt ducimus est a et. Cumque in repellat ullam rerum molestias corrupti amet quidem corporis excepturi, ipsam aliquid, asperiores dignissimos numquam impedit.
+            At doloremque dolore eos officia molestiae repellat necessitatibus ducimus explicabo. Similique laborum tempora sunt nulla adipisci iste quas labore modi fugiat! Hic fugiat ex reiciendis distinctio eos recusandae molestiae sapiente.
+            Fuga officiis eaque, aut blanditiis perferendis omnis quo numquam, atque quasi aspernatur et. Hic ut non a. Rerum ex saepe, eum eaque vel ut maiores accusamus unde beatae natus nulla?
+            Earum laboriosam, reprehenderit, pariatur quam neque fugiat itaque sunt sint error ducimus veritatis sequi accusantium beatae! Odio quisquam in mollitia porro sint repellendus id minima provident maiores doloremque, ex perspiciatis!
+            Ipsum, minus, voluptatum veritatis labore quia ex distinctio explicabo repellendus blanditiis rem unde possimus impedit obcaecati, ullam expedita veniam error perspiciatis asperiores vitae quibusdam voluptatibus accusamus sint est ducimus? Aut.
+            Unde culpa corrupti sed quasi accusantium iusto, sint quidem saepe, fugiat voluptatem, obcaecati sequi nemo libero consectetur odit dolor aperiam voluptatibus cupiditate ab numquam error exercitationem expedita. Voluptates, autem nostrum?
+            Nulla ipsa eveniet odio cupiditate praesentium unde soluta, omnis perspiciatis veniam. Minima eveniet neque nam nisi facilis similique maxime officia deserunt ea libero saepe quaerat adipisci, dolor perspiciatis iure ipsa.
+            Inventore possimus nisi aliquam voluptas, molestias facilis. Unde harum quibusdam dignissimos sed, beatae, nostrum mollitia aspernatur culpa eligendi inventore veritatis officiis? Culpa temporibus delectus facilis alias doloremque officiis eveniet atque?
+            </p>
+            <div class="square position"></div>
+            <div class="square top"></div>
+            <div class="container">
+
+                <div class="square absolute"></div>
+            </div>
+                
+        </body>
+
+    </html>

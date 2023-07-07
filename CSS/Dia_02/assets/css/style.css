@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+}
+
+/* Para poner bordes se utiliza border para los cuatro costados, no se pueden poner tamaños en porcentajes */
+/* Padding es un margen interior entre el contenido de esta y el borde */
+/* Float sirve para ordenar*/
+/* box-sizing: border-box; sirve para que el tamaño de las cajas no varie y ocupen el total */
+/* overflow: scroll;-> Para poner una barra de desplazamiento */
+.ejemplo{
+    /* height: 200px;   */
+    background-color: tomato;
+    /* border-bottom: 10px solid black; */
+    /* border: 2px solid black; */
+    /* margin: 3em; */
+    width: 33.2%;
+    color: black;
+    padding: 1em;
+    float: left;
+    border-right: 10px dotted white ;
+    box-sizing: border-box;
+    overflow: scroll;
+    min-height: 500px; /* La altura minima*/
+    max-height: 700px; /* La altura maxima*/
+
+}
+
+.image{
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    width: 200px;
+}
+
+.long_text{
+
+}
+
+/* sirve para limpiar los espacios y restablecer el html */
+.clearfix{
+    clear: both;
+}
+
+/* Para poner las barras de desplazamientos oculatas */
+.ejemplo::-webkit-scrollbar {
+    width: 0 
+    } 
