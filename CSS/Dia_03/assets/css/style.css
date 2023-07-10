@@ -1,0 +1,71 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.flex{
+    display: flex;
+    aspect-ratio: 1;
+    width: 600px;
+    background-color: dodgerblue;
+    color: white;
+    font-size: 3em;
+    /* Alinea los elementos en el eje X */
+    justify-content: space-between; /*Alinea elementos en el centro del eje principal*/
+    /*
+    justify-content: flex-end; Alinea elementos en el final del eje principal
+    justify-content: flex-start; Alinea elementos en el principio del eje principal, QUE ES EL VALOR POR DEFECTO
+    */
+    justify-content: flex-end;
+    justify-content: center;
+    /* Alinea los elementos en el eje Y */
+    align-items: flex-start; /*Alinea elementos en el eje secundario o cruzado*/
+    flex-wrap: wrap; /*Para alinear todos los elementos dentro de la caja*/ 
+    flex-direction: column;
+    /* align-content: center; Es lo mismo que align-items pero con mayor cantidad de elementos*/
+    gap: 20px; /*Separacion entre elementos*/
+
+
+}
+
+.flex p{
+    margin: 0;
+    text-align: center;
+    color: brown;
+}
+/* Para seleccionar el hijo directo */
+.flex > p{
+    color: gold;
+    order: 0;
+    
+}
+
+.flex .item01{
+    order: 1;
+    align-self: stretch;/* Width 100% = align-self: stretch*/
+}
+
+.flex .item02{
+    order: 2;
+}
+
+.flex .item03{
+    order: 3;
+}
+.flex .item04{
+    order: 4;
+}
+.flex .item05{
+    order: 5;
+}
+.flex .item06{
+    order: 6;
+}
+.flex .item07{
+    order: 7;
+}
+.flex .item08{
+    order: 8;
+} 
