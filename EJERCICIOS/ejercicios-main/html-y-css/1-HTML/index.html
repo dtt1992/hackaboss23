@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+  <html lang="es">
+
+      <head>
+
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ejercicio HTML - Dia 2</title>
+
+      </head>
+
+      <body>
+
+        <header class="header">
+          <h1>Debrable</h1>
+          <nav class="menu">
+            <ul class="lista_menu">
+              <li class="lista_elemento"><a href="#titulo_top">Mi top 10 pelliculas</a></li>
+              <li class="lista_elemento"><a href="#titulo_viaje">Mi viaje a Japon</a></li>
+              <li class="lista_elemento"><a href="#titulo_formulario">Mandame un mensaje</a></li>
+            </ul>
+          </nav>
+        </header>
+        <main class="main">
+          <section>
+            <article class="main_top">
+              <h2 id="titulo_top">Mi TOP 10 PELICULAS</h2>
+              <ol>
+                <li>El padrino</li>
+                <li>La lista de Schindler</li>
+                <li>El padrino. Parte II</li>
+                <li>Cadena perpetua</li>
+                <li>Pulp Fiction</li>
+                <li>El rey Leon</li>
+                <li>Forrest Gump</li>
+                <li>La vida es bella</li>
+                <li>Gladiato</li>
+                <li>Coco</li>
+              </ol>
+              
+            </article>
+            <article class="main_viaje">
+              <h2 id="titulo_viaje">MI VIAJE A JAPON</h2>
+              <img src="./assets/image/japon.jpg" alt="japn" class="imagen_japon">
+              <p>
+                Quod odit corrupti debitis numquam. Aliquid possimus adipisci fugiat, dolores quae suscipit nisi eveniet libero accusamus, perspiciatis quisquam est illo placeat similique officia optio ad explicabo vero repudiandae. Exercitationem, possimus.
+              </p>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero, veritatis provident. Ad amet error ullam veniam ipsam doloremque voluptates pariatur minus fuga mollitia      delectus, necessitatibus aperiam iste non  suscipit? Natus!
+              </p>
+            </article>
+            <aside class="aside_perfil">
+              <img src="./assets/image/ironman.jpg" alt="">
+              <h2>DEBRA SMITH</h2>
+              <p>Aqui escribo todo lo que se me ocurre</p>
+              <address><a href="mailto:debra.smith@example.com">debra.smith@example.com</a></address>
+            </aside>  
+          </section>
+
+          <section>
+            <h2 id="titulo_formulario">MANDAME UN MENSAJE</h2>
+
+            <form action="#">
+              
+              <label for="nombre">Nombre:</label>
+              <input type="text" name="nombre" id="nombre" required>
+              
+              <label for="email">Email:</label>
+              <input type="email" name="email" id="email" required>
+              
+              <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+              <input type="date" name="fecha_nacimiento" id="fecha_nacimiento" required>
+              <br>
+              
+              <p><label for="comentarios">Comentarios</label></p>
+              <textarea name="comnetarios" id="comentarios" cols="100" rows="10" placeholder="Escribe aqui todo lo que quieras"></textarea>
+              <br>
+              
+              <input type="checkbox" name="suscribete" id="suscribete">
+              <label for="suscribete">Suscribirse a newsletter</label>
+              <input type="submit" value="Enviar">
+            </form>
+          </section>  
+        
+        
+        </main>
+        <footer class="footer">
+          <p><a href="#">Terminos y condiciones</a> | <a href="#">Politica de privacidad</a></p>
+
+        </footer>
+
+      </body>
+  </html>
