@@ -1,0 +1,92 @@
+.square{
+    width: 300px;
+    aspect-ratio: 1;
+    background-color: blue;
+    transform: translate(200px, 200px) rotate(45deg) scale(1) ;
+}
+.square:hover{
+    transform: translate(200px, 200px) rotate(45deg) scale(1.3);
+}
+
+.square2{
+    width: 300px;
+    aspect-ratio: 1;
+    background-color: blue;
+    border: 0px solid black;
+    transition-property: background-color, width;
+    transition-duration: 1s;
+    /* transition-delay: 0; */
+    transition-timing-function: ease-in-out;
+}
+
+.square2:hover{
+    background-color: red;
+    width: 500px;
+    border-width: 30px;
+}
+
+.square3{
+    width: 300px;
+    aspect-ratio: 1;
+    opacity: 0;
+    background-color: red;
+    animation-name: slide;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    /* animation-delay: 5s; */
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    /* animation-fill-mode: backwards; */
+
+}
+
+.square4{
+    width: 300px;
+    aspect-ratio: 1;
+    position:relative;
+    background-color: yellow;
+    animation-name: crazymoves;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    /* animation-delay: 5s; */
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    /* animation-fill-mode: backwards; */
+
+}
+
+
+@keyframes crazymoves {
+    0%{
+        top:0;
+        left: 0;
+        transform: rotate(0);
+    }
+    25%{
+        top:100px;
+        left: 100px;
+        transform: rotate(180deg);
+    }
+    75%{
+        top:300px;
+        left: 300px;
+        transform: rotate(270deg);
+    }
+    100%{  
+        top:600px;
+        left: 600px;
+        transform: rotate(0);
+    }
+    
+}
+
+@keyframes slide{
+    from{
+        transform:  translateX(0);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(300px);
+        opacity: 1;
+    }
+}
