@@ -1,0 +1,14 @@
+//Metos String
+
+
+const text = "Adios Mundo Cruel!"
+
+// Para saber la cantidad de caracteres de una string
+text.length
+
+// Transformar todos los caracteres a Mayusculas
+text.toUpperCase()
+
+// Transformar todos los caracteres a Minuculas
+text.toLowerCase()
+
