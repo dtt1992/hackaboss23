@@ -1,0 +1,78 @@
+// Metodos Array
+
+const fruits = ["manzana", "pera", "platano", "naranja", "piña", "pera"]
+
+// length
+console.log(fruits.length)
+
+// indexOf
+// indexOf(item)
+
+const index = fruits.indexOf("platano")
+console.log(index)
+
+// lastIndexOf
+// lastIndexOf(item)
+const pera = fruits.lastIndexOf("pera")
+console.log(pera)
+
+
+// push -> Insertar un elemento al final del array
+// Modifica el array original
+// push(item)
+fruits.push("uva")
+console.log(fruits)
+
+
+// pop -> elimina el ultimo elemento del array
+// Puede asignar a otra variable ese elemento sacado
+const uva = fruits.pop()
+console.log(uva)
+console.log(fruits)
+
+// Unshift -> inserta un elemento al principio de la array
+// unshift(item)
+
+fruits.unshift("melocoton")
+console.log(fruits)
+
+// shift -> elimina el primer elemento de la array
+// Se le puede asignar a una variable
+// shift(item)
+
+const melocoton = fruits.shift()
+console.log(melocoton)
+
+
+// reverse -> invierte el orden de la array
+
+fruits.reverse()
+console.log(fruits)
+
+// join -> unir elementos
+// join(separador) -> une todos los elementos generado un string nuevo, sin parametro lo une con comas y sin espacio entre item
+
+fruits.join(", ")
+
+
+// splice
+// slpice(index, limit, item_n...) -> modifica la array desde el index y cuantos elementos, saca elementos e inserta
+
+const fruit = fruits.splice(1, 2)
+console.log(fruit)
+console.log(fruits)
+
+// Podemos añadir elementos en la posiciion que queramos
+
+const frutas = fruits.splice(1, 0, "cereza")
+console.log(fruits)
+
+
+// slice
+// slice(start, end) -> devuelve una copia de la seleccion del array, no modifica el array origianl
+
+const fruits2 = fruits.slice(3,-1)
+const fruits3 = fruits.slice(2)
+console.log(fruits3)
+console.log(fruits2)
+console.log(fruits)
