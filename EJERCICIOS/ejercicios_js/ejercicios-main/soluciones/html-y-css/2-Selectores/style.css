@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Toda la página tiene una tipografía sin serifa */
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* La cabecera tiene color de fondo, y texto blanco y centrado */
+header {
+  background-color: rgb(28, 138, 255);
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+section {
+  margin: 2rem;
+}
+
+/* LISTA */
+
+/* Las viñetas de la lista no son las que vienen por defecto */
+
+li {
+  list-style: circle inside;
+  margin: 0.5rem;
+}
+
+/* Los objetos importantes de la lista están subrayados y en negrita */
+
+li.importante {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* TABLA */
+
+td,
+th {
+  padding: 0.5rem;
+}
+
+/* La cabecera tiene un color de fondo y de texto diferente al resto */
+
+thead {
+  background-color: rgb(28, 138, 255);
+  color: white;
+}
+
+/* Las filas pares tienen un color de fondo distinto a las impares */
+
+tbody tr {
+  background-color: rgb(112, 181, 255);
+}
+
+tbody tr:nth-child(odd) {
+  background-color: rgb(226, 240, 255);
+}
+
+/* Los títulos de fila tienen un color de fondo con transparencia */
+
+tbody th {
+  background-color: rgba(28, 138, 255, 0.486);
+}
+
+/* El descanso está en mayúsculas, negrita y centrado */
+
+#descanso {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+}
