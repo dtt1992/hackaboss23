@@ -57,3 +57,5 @@ console.log(option2)
 
 const option3 = switchObj[text] || "El texto es falso"
 console.log(option3)
+
+
