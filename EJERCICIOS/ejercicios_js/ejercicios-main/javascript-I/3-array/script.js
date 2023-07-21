@@ -17,3 +17,17 @@ const names = [
   "Arun",
   "Kenton",
 ];
+
+
+function limpiarArray(lista) {
+  const finalArray = []
+  
+  lista.forEach((name) =>{
+    if (!finalArray.includes(name)) {
+      finalArray.push(name)
+    }
+})
+  return finalArray
+}
+
+console.log(limpiarArray(names))

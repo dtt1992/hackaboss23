@@ -21,8 +21,7 @@ const people = {
 
 function comprobarEdades(obj) {
   for (const propiedad in obj) {
-    //console.log(`${people[propiedad]}:`)
-      if (obj[propiedad] > mayoriaEdad) {
+       if (obj[propiedad] > mayoriaEdad) {
       console.log(`${propiedad} con ${obj[propiedad]} es mayor de edad`)
       }else{
       console.log(`${propiedad} con ${obj[propiedad]} es menor de edad`)
